@@ -1,0 +1,31 @@
+# IndustrialRAG requirements
+
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# Vector store  (IndexIDMap requires faiss-cpu >= 1.7.4)
+faiss-cpu==1.8.0
+sentence-transformers==2.7.0
+
+# Numpy  (pinned for faiss compatibility)
+numpy>=1.24,<2.0
+
+# Document parsing
+pdfplumber==0.11.0
+pandas==2.2.2
+openpyxl==3.1.2
+xlrd==2.0.1
+
+# Frontend
+streamlit==1.35.0
+requests==2.32.0
+
+# Optional LLM backends — uncomment what you use
+# openai==1.30.0
+# anthropic==0.26.0
+
+# OCR support for scanned PDFs (optional but recommended)
+pytesseract==0.3.13
+Pillow==10.3.0
